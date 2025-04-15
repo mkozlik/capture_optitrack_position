@@ -20,7 +20,7 @@ class PoseSubscriber(Node):
     ))
         self.subscription  # Prevent unused variable warning
         self.pole_position = None  # To store the coordinates of "pole_position"
-        self.csv_file = 'coordinates.csv'
+        self.csv_file = '/root/ros2_ws/src/icuas25_competition/coordinates.csv'
 
         # Initialize the CSV file with headers
         with open(self.csv_file, 'w', newline='') as f:
